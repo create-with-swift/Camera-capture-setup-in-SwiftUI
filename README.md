@@ -1,4 +1,4 @@
-# [Article Title]
+# Camera capture setup in SwiftUI: The easiest way
 
 <p align="center">
     <img src="resources/CreatewithSwift-Hero.gif" alt="Ignite logo" />
@@ -21,9 +21,13 @@
 
 ## Content
 
-TODO: Change this part.
+In this short tutorial you will learn how to set a camera feed capture in a SwiftUI app.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+You can find numerous guides discussing how to obtain a camera feed. Let’s explore a method that works on all devices that have at least one integrated camera.
+
+You will learn the easiest and quickest method to obtain a live feed and use it in an app created with SwiftUI. It serves as a foundation for incorporating a camera feed into projects that need so.
+
+### TODO: Link to the article ###
 
 
 ## License
