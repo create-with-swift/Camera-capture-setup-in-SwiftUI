@@ -1,0 +1,11 @@
+//
+//  SampleCode.xcconfig
+//  Camera-SwiftUI
+//
+//  Created by Gianluca Orpello on 28/03/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+SAMPLE_CODE_DISAMBIGUATOR=${DEVELOPMENT_TEAM}
