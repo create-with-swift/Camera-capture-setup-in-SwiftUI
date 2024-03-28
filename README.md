@@ -71,13 +71,13 @@ SOFTWARE.
 
 <p align="center">
 	<a href="https://twitter.com/createwithswift" target="_blank">
-		<img src="../resources/createwithswift-followonx.png" />
+		<img src="resources/createwithswift-followonx.png" />
 	</a>
 	<a href="https://www.linkedin.com/company/create-with-swift/" target="_blank">
-		<img src="../resources/createwithswift-linkedin.png" />
+		<img src="resources/createwithswift-linkedin.png" />
 	</a>
 	<a href="https://www.createwithswift.com" target="_blank">
-		<img src="../resources/createwithswift-articles.png" />
+		<img src="resources/createwithswift-articles.png" />
 	</a>
 </p>
 
