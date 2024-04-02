@@ -7,7 +7,8 @@
 
 import AVFoundation
 import os.log
-import UIKit
+import CoreImage
+
 
 class CameraManager: NSObject {
     
@@ -18,7 +19,7 @@ class CameraManager: NSObject {
     private let captureSession = AVCaptureSession()
     private var deviceInput: AVCaptureDeviceInput?
     private var videoOutput: AVCaptureVideoDataOutput?
-    private let systemPreferredCamera = AVCaptureDevice.systemPreferredCamera
+    private let systemPreferredCamera = AVCaptureDevice.default(for: .video)
 
     private var sessionQueue = DispatchQueue(label: "video.preview.session")
     
@@ -46,17 +47,6 @@ class CameraManager: NSObject {
             }
             
             return isAuthorized
-        }
-    }
-    
-    private var videoOutputRotationAngle: CGFloat {
-        switch UIDevice.current.orientation {
-        case .portrait:
-            return 90.0
-        case .landscapeRight:
-            return 180.0
-        default:
-            return 0.0
         }
     }
     
@@ -117,9 +107,10 @@ class CameraManager: NSObject {
 extension CameraManager: AVCaptureVideoDataOutputSampleBufferDelegate {
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        guard let currentFrame = sampleBuffer.cgImage else { return }
-        rotate(by: videoOutputRotationAngle,
-               from: connection)
+        guard let currentFrame = sampleBuffer.cgImage else { 
+            print("Can't translate to CGImage")
+            return
+        }
         addToPreviewStream?(currentFrame)
     }
     
