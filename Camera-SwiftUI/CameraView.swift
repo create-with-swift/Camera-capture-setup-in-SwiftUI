@@ -19,6 +19,10 @@ struct CameraView: View {
                     .scaledToFit()
                     .frame(width: geometry.size.width,
                            height: geometry.size.height)
+            } else {
+                ContentUnavailableView("Camera feed interrupted", systemImage: "xmark.circle.fill")
+                                        .frame(width: geometry.size.width,
+                           height: geometry.size.height)
             }
         }
     }
