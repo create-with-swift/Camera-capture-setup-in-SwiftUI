@@ -6,15 +6,10 @@
 //
 
 import AVFoundation
-import os.log
 import CoreImage
 
 
 class CameraManager: NSObject {
-    
-    private let logger = Logger(subsystem: "com.CreateWithSwift.Camera-SwiftUI.CameraManager",
-                                category: "CameraManager")
-
     
     private let captureSession = AVCaptureSession()
     private var deviceInput: AVCaptureDeviceInput?
@@ -77,12 +72,10 @@ class CameraManager: NSObject {
         videoOutput.setSampleBufferDelegate(self, queue: sessionQueue)
         
         guard captureSession.canAddInput(deviceInput) else {
-            logger.error("Unable to add device input to capture session.")
             return
         }
         
         guard captureSession.canAddOutput(videoOutput) else {
-            logger.error("Unable to add video output to capture session.")
             return
         }
         
