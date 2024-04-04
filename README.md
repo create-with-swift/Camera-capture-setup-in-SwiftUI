@@ -27,7 +27,7 @@ You can find numerous guides discussing how to obtain a camera feed. Let’s exp
 
 You will learn the easiest and quickest method to obtain a live feed and use it in an app created with SwiftUI. It serves as a foundation for incorporating a camera feed into projects that need so.
 
-
+[Read the full article](www.createwithswift.com/camera-capture-setup-in-a-swiftui-app)
 
 ## License
 
