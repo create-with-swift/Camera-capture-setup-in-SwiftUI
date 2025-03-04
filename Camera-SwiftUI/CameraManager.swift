@@ -81,7 +81,9 @@ class CameraManager: NSObject {
         
         captureSession.addInput(deviceInput)
         captureSession.addOutput(videoOutput)
-                
+
+        //For a vertical orientation of the camera stream
+        videoOutput.connection(with: .video)?.videoRotationAngle = 90
     }
     
     
